@@ -12,25 +12,6 @@ st.set_page_config(
     layout="wide"
 )
 
-dark_style = """
-    <style>
-    body {
-        background-color: #000000;
-        color: white;
-    }
-    .stApp {
-        background-color: #000000;
-    }
-    .css-1v3fvcr, .css-10trblm, .css-1d391kg {
-        color: white;
-    }
-    .e1fqkh3o10, .stMarkdown, .stDataFrame {
-        color: white !important;
-    }
-    </style>
-"""
-st.markdown(dark_style, unsafe_allow_html=True)
-
 # Load data from data.json
 @st.cache_data
 def load_data():
