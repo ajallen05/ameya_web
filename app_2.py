@@ -15,7 +15,7 @@ st.set_page_config(
 # Load data from data.json
 @st.cache_data
 def load_data():
-    json_path = r"C:\Users\ADMIN\OneDrive\Desktop\Ameya\second_web\data.json"
+    json_path = r"data.json"
     try:
         with open(json_path, 'r') as f:
             data = json.load(f)
